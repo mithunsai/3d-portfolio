@@ -1,6 +1,17 @@
+import { BrowserRouter } from "react-router-dom"
+import { Hero, Navbar } from "./components"
+
 const App = () => {
   return <>
-    3D portfolio
+    <BrowserRouter>
+    <div className="relative">
+    <div className="bg-primary">
+        <Navbar />
+        <Hero />
+      </div>
+    </div>
+
+    </BrowserRouter>
   </>
 }
 
