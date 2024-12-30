@@ -1,8 +1,11 @@
-import React from 'react'
+import { Html, useProgress } from '@react-three/drei'
 
 const Loader = () => {
+  const {progress}= useProgress();
   return (
-    <div>Loader</div>
+    <Html>
+      <p>{progress.toFixed(2)}%</p>
+    </Html>
   )
 }
 
