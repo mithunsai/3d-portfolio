@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { motion } from "framer-motion";
@@ -26,7 +27,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <ComputersCanvas/>
 
       <div className="absolute xs:bottom-3 bottom-25 w-full flex justify-center">
         <a href="#about">
