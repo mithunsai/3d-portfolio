@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { styles } from "../styles"
 import { services } from "../contants"
 import { fadeIn, textVariant } from '../utils/motion'
-import {SectionWrapper} from '../hoc/'
+import { SectionWrapper } from '../hoc/'
 const ServiceCard = ({ title, icon, index }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -22,14 +22,15 @@ const ServiceCard = ({ title, icon, index }) => {
 const About = () => {
   return (
     <>
-      <motion.div id="about" variants={textVariant()}>
+      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I am a skilled Software developer with experience in JavaScript and specialized in frameworks like Vue.js, React.js and Node.js.
-        I am a hard worker, always thriving to reach the top level. I do not like to make myself comfortable with what I have, because
-        I truly believe, that is where our growth stops.
+        I am a Full-Stack Web Developer specialized in JavaScript, Vue.js, and React.js for creating dynamic,
+        responsive applications. I also am proficient in back-end development with Node.js, Express.js, and MongoDB,
+        delivering scalable and high-performance solutions. My expertise also includes seamlessly integrating front-end
+        and back-end technologies to provide a smooth and efficient user experience.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) =>
