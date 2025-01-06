@@ -1,19 +1,21 @@
-import { BrowserRouter } from "react-router-dom"
-import { About, Hero, Navbar } from "./components"
+import { BrowserRouter } from "react-router-dom";
+import { About, Experience, Hero, Navbar } from "./components";
 
 const App = () => {
-  return <>
-    <BrowserRouter>
-      <div className="relative bg-primary z-0">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+  return (
+    <>
+      <BrowserRouter>
+        <div className="relative bg-primary z-0">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Experience />
         </div>
-        <About/>
-      </div>
+      </BrowserRouter>
+    </>
+  );
+};
 
-    </BrowserRouter>
-  </>
-}
-
-export default App
+export default App;
